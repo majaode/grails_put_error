@@ -1,4 +1,9 @@
-
+grails.plugin.springsecurity.filterChain.filterNames = [
+		'securityContextPersistenceFilter', 'logoutFilter',
+		'authenticationProcessingFilter', 'httpPutFormContentFilter',
+		'rememberMeAuthenticationFilter', 'anonymousAuthenticationFilter',
+		'filterInvocationInterceptor'
+]
 
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 		[pattern: '/',               access: ['permitAll']],
